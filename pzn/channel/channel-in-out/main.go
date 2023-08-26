@@ -33,4 +33,3 @@ func DataOut(channel <-chan int) {
 	log.Println(data)
 	wg.Done()
 }
-bu
