@@ -10,6 +10,7 @@ func main() {
 	channel <- "hallo1"
 	channel <- "hallo2"
 	channel <- "hallo3"
+	// channel <- "hallo4" // jika ini diuncomment maka akan deadlock
 	log.Println(<-channel)
 
 	log.Println(cap(channel))
